@@ -1,0 +1,44 @@
+
+<!--<p class="sort-condition">
+    <i class="fa fa-sort-amount-desc"></i>
+    <a href="/index.php/vodsearch/-&#45;&#45;time&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;.html" class="order active">按时间</a>
+    <a href="/index.php/vodsearch/-&#45;&#45;hits&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;.html" class="order ">按人气</a>
+    <a href="/index.php/vodsearch/-&#45;&#45;score&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;.html" class="order ">按评分</a>
+
+    <span class="result_tips fr">当前第 <b>1</em>/409</b> 页</span>
+</p>-->
+<div class="sort-wrap">
+    <h4 class="theme">搜索到<span>${pageInfo.total}</span>条结果</h4>
+</div>
+<p class="sort-condition"></p>
+
+<ul class="search-list" id="queryResults">
+    <#list pageInfo.list as mv>
+    <li class="item mb15 card-wrap" onclick="toDetail('${mv.id}')">
+
+            <div class="row">
+                <div class="img col-sm-2" style="">
+                    <img class="lazyload show" data-original="${mv.cover}">
+                </div>
+                <div class="txt col-sm-9">
+                    <h5 class="subject ellipsis-one">
+                        <b>${mv.name}</b><span class="douban_score">${mv.score?string("0.0")}分</span>
+                    </h5>
+                    <p class="ellipsis-one">年份：${mv.publishTime} </p>
+                    <p>地区：${mv.area} </p>
+                    <p>类型：${mv.category}</p>
+                    <p class="ellipsis-one">导演：${mv.director}</p>
+                    <p class="ellipsis-one">主演：${mv.actor}</p>
+                    <!--                        <p>资源：</p>
+                                            <p class="last">7小时前 / 81°C</p>-->
+                </div>
+            </div>
+
+    </li>
+</#list>
+</ul>
+<script>
+    function toDetail(id) {
+        window.open("${request.contextPath}/detail?id="+id);
+    }
+</script>

@@ -1,0 +1,86 @@
+<section class="play-resource">
+    <div class="container">
+        <div class="resource-box">
+
+            <div class="hd clearfix">
+
+                <div class="resource-box-nav swiper-container">
+
+                    <ul class="nav nav-tabs swiper-wrapper">
+                        <#if (src1?size > 0)>
+                        <li class="swiper-slide"><a href="javascript:;" class="tab-nav" title="605-605yun">线路1</a></li>
+                        </#if>
+                        <#if (src2?size > 0)>
+                        <li class="swiper-slide"><a href="javascript:;" class="tab-nav" title="605-605yun">线路2</a></li>
+                          </#if>
+                          <#if (src3?size > 0)>
+                        <li class="swiper-slide"><a href="javascript:;" class="tab-nav" title="605-605yun">线路3</a></li>
+                       </#if>
+                    </ul>
+
+                </div>
+
+            </div>
+            <!--线路-->
+            <div class="bd clearfix">
+                <#if (src1?size > 0)>
+                <div class="rb-item">
+                    <span style="color: red">公告：请不要相信视频中出现的任意广告，视频加载可能需要一些时间，请耐心等待，如果加载失败请刷新页面。</span>
+                    <ul class="episodes-list clearfix">
+                    <#list src1 as s>
+                        <#if movieVO.movieSrc??>
+                            <#if s.part == movieVO.movieSrc.part && s.id == movieVO.movieSrc.id>
+                                <li><a  href="${request.contextPath}/play?id=${s.id}&line=1" class="active">${s.name}</a></li>
+                             <#else>
+                                 <li><a  href="${request.contextPath}/play?id=${s.id}&line=1" >${s.name}</a></li>
+                            </#if>
+                        <#else>
+                             <li><a  href="${request.contextPath}/play?id=${s.id}&line=1" >${s.name}</a></li>
+                        </#if>
+
+                    </#list>
+                    </ul>
+                </div>
+             </#if>
+                <#if (src2?size > 0)>
+                <div class="rb-item" style="display:block;">
+                    <span style="color: red">公告：请不要相信视频中出现的任意广告，视频加载可能需要一些时间，请耐心等待，如果加载失败请刷新页面。</span>
+                    <ul class="episodes-list clearfix">
+                        <#list src2 as s>
+                        <#if movieVO.movieSrc??>
+                        <#if s.part == movieVO.movieSrc.part && s.id == movieVO.movieSrc.id>
+                        <li><a  href="${request.contextPath}/play?id=${s.id}&line=2" class="active">${s.name}</a></li>
+                        <#else>
+                        <li><a  href="${request.contextPath}/play?id=${s.id}&line=2" >${s.name}</a></li>
+                    </#if>
+                    <#else>
+                    <li><a  href="${request.contextPath}/play?id=${s.id}&line=2" >${s.name}</a></li>
+                </#if>
+
+</#list>
+                    </ul>
+                </div>
+            </#if>
+                <#if (src3?size > 0)>
+                <div class="rb-item" style="display:block;">
+                    <span style="color: red">公告：请不要相信视频中出现的任意广告，视频加载可能需要一些时间，请耐心等待，如果加载失败请刷新页面。</span>
+                    <ul class="episodes-list clearfix">
+                        <#list src3 as s>
+                        <#if movieVO.movieSrc??>
+                        <#if s.part == movieVO.movieSrc.part>
+                        <li><a  href="${request.contextPath}/play?id=${s.id}&line=3" class="active">${s.name}</a></li>
+                        <#else>
+                        <li><a  href="${request.contextPath}/play?id=${s.id}&line=3" >${s.name}</a></li>
+                    </#if>
+                    <#else>
+                    <li><a  href="${request.contextPath}/play?id=${s.id}&line=3" >${s.name}</a></li>
+                </#if>
+
+</#list>
+                    </ul>
+                </div>
+                </#if>
+            </div>
+        </div>
+    </div>
+</section>

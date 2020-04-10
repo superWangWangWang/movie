@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>搜索结果 - 豆沙包动漫网</title>
+    <meta name="keywords" content="搜索结果" />
+    <meta name="description" content="搜索结果" />
+
+<link rel="stylesheet" type="text/css" href="css/shouye.css">
+
+
+<script src="js/jquery.min.js"></script>
+
+<script src="js/home.js"></script>
+
+<script src="js/bottom.js"></script>
+
+<script type="text/javascript" src="swiper/swiper.js"></script>
+
+<script>createjs(0);</script>
+
+<link rel="stylesheet" type="text/css" href="css/search.css">
+
+
+
+    <script src="js/page.js"></script>
+</head>
+<body>
+<#include "/common/top.html">
+<!--当前位置-->
+<main class="main main_search">
+    <section class="sbg">
+        <div class="container">
+			<div class="left-content">
+            <div class="card-wrap">
+
+                <div id="results"></div>
+
+
+
+
+                <!--分页控件-->
+                <div id="pageParent" class="pageParent"></div>
+            <!--    </div>-->
+
+
+
+
+</div>
+            </div>
+            <!--<div class="right-side">
+			                <div class="hot-up card-wrap">
+                    <div class="title clearfix">
+                        <h3 class="theme"><em class="after-dot">日韩动漫</em>新播榜</h3>
+                        <a href="/label/tv.html" title="新热日韩动漫榜TOP100" class="more more-arrow" target="_blank">TOP100</a>
+                    </div>
+                    <div class="content">
+                        <ul class="list">
+															<li class="item clearfix"><a href="/gcdm/paly_533.html" title="瑞雪兆丰年" target="_blank"><i class="num">1</i><span class="subject"><em class="ellipsis-one">瑞雪兆丰年</em> <i class="douban_score"></i></span><em class="hot">10°C</em>
+                                       <div class="more-details clearfix">
+                                    <img data-original="/upload/vod/20191207-2/b7855de70fc2cfdbda25090eea7746be.jpg" class="movie_thumb lazyload" title="瑞雪兆丰年" alt="瑞雪兆丰年">
+                                    <div class="info clearfix">
+                                        <p>类型：国产动漫</p>
+                                        <p>地区：大陆</p>
+                                        <p>添加时间：2020-03-15(大陆)</p>
+                                        <p>豆瓣：10.0分</p>
+                                    </div>
+                                </div>
+                                  </a></li>
+									                                  <li class="item"><a href="/gcdm/paly_3761.html" title="狐妖小红娘" target="_blank"><i class="num">2</i><span class="subject"><em class="ellipsis-one">狐妖小红娘</em> <i class="douban_score"></i></span><em class="hot">10°C</em>
+                                </a></li>
+								                                  <li class="item"><a href="/gcdm/paly_4585.html" title="星武神诀" target="_blank"><i class="num">3</i><span class="subject"><em class="ellipsis-one">星武神诀</em> <i class="douban_score"></i></span><em class="hot">99°C</em>
+                                </a></li>
+								                                  <li class="item"><a href="/gcdm/paly_203.html" title="万界仙踪" target="_blank"><i class="num">4</i><span class="subject"><em class="ellipsis-one">万界仙踪</em> <i class="douban_score"></i></span><em class="hot">99°C</em>
+                                </a></li>
+								                                  <li class="item"><a href="/gcdm/paly_681.html" title="隐婚一百分：神秘老公不见面" target="_blank"><i class="num">5</i><span class="subject"><em class="ellipsis-one">隐婚一百分：神秘老公不见面</em> <i class="douban_score"></i></span><em class="hot">99°C</em>
+                                </a></li>
+								                                  <li class="item"><a href="/gcdm/paly_62.html" title="萌宠驾到" target="_blank"><i class="num">6</i><span class="subject"><em class="ellipsis-one">萌宠驾到</em> <i class="douban_score"></i></span><em class="hot">99°C</em>
+                                </a></li>
+								                                  <li class="item"><a href="/gcdm/paly_259.html" title="观海策" target="_blank"><i class="num">7</i><span class="subject"><em class="ellipsis-one">观海策</em> <i class="douban_score"></i></span><em class="hot">99°C</em>
+                                </a></li>
+								                                  <li class="item"><a href="/gcdm/paly_233.html" title="三国演义3D动画版" target="_blank"><i class="num">8</i><span class="subject"><em class="ellipsis-one">三国演义3D动画版</em> <i class="douban_score"></i></span><em class="hot">99°C</em>
+                                </a></li>
+								                                  <li class="item"><a href="/gcdm/paly_287.html" title="尸兄第一季" target="_blank"><i class="num">9</i><span class="subject"><em class="ellipsis-one">尸兄第一季</em> <i class="douban_score"></i></span><em class="hot">99°C</em>
+                                </a></li>
+								                                  <li class="item"><a href="/gcdm/paly_122.html" title="口水三国第二季" target="_blank"><i class="num">10</i><span class="subject"><em class="ellipsis-one">口水三国第二季</em> <i class="douban_score"></i></span><em class="hot">99°C</em>
+                                </a></li>
+								                          </ul>
+                    </div>
+                </div>
+				                <div class="hot-up card-wrap">
+                    <div class="title clearfix">
+                        <h3 class="theme"><em class="after-dot">国产动漫</em>新播榜</h3>
+                        <a href="/label/dy.html" title="新热国产动漫榜TOP100" class="more more-arrow" target="_blank">TOP100</a>
+                    </div>
+                    <div class="content">
+                        <ul class="list">
+						<li class="item clearfix"><a href="/rbdm/paly_2541.html" title="欢迎来到实力至上主义教室" target="_blank"><i class="num">1</i><span class="subject"><em class="ellipsis-one">欢迎来到实力至上主义教室</em> <i class="douban_score"></i></span><em class="hot">10°C</em>
+                                                                <div class="more-details clearfix">
+                                    <img data-original="/upload/vod/20191208-2/0fc2202efd9f4269d4dd5e4a87383256.jpg" class="movie_thumb lazyload" title="欢迎来到实力至上主义教室" alt="欢迎来到实力至上主义教室">
+                                    <div class="info clearfix">
+                                        <p>类型：日韩动漫</p>
+                                        <p>地区：日本</p>
+                                        <p>添加时间：2020-03-15(日本)</p>
+                                        <p>豆瓣：5.0分</p>
+                                    </div>
+                                </div>
+                                  </a></li>
+									                                  <li class="item"><a href="/rbdm/paly_1807.html" title="浜虎第二季" target="_blank"><i class="num">2</i><span class="subject"><em class="ellipsis-one">浜虎第二季</em> <i class="douban_score"></i></span><em class="hot">10°C</em>
+                                </a></li>
+								                                  <li class="item"><a href="/rbdm/paly_1468.html" title="超级恋人" target="_blank"><i class="num">3</i><span class="subject"><em class="ellipsis-one">超级恋人</em> <i class="douban_score"></i></span><em class="hot">10°C</em>
+                                </a></li>
+								                                  <li class="item"><a href="/rbdm/paly_1774.html" title="紫罗兰永恒花园 Extra Episode" target="_blank"><i class="num">4</i><span class="subject"><em class="ellipsis-one">紫罗兰永恒花园 Extra Episode</em> <i class="douban_score"></i></span><em class="hot">99°C</em>
+                                </a></li>
+								                                  <li class="item"><a href="/rbdm/paly_2287.html" title="机动奥特曼国语版" target="_blank"><i class="num">5</i><span class="subject"><em class="ellipsis-one">机动奥特曼国语版</em> <i class="douban_score"></i></span><em class="hot">99°C</em>
+                                </a></li>
+								                                  <li class="item"><a href="/rbdm/paly_1025.html" title="三丽鸥男子" target="_blank"><i class="num">6</i><span class="subject"><em class="ellipsis-one">三丽鸥男子</em> <i class="douban_score"></i></span><em class="hot">99°C</em>
+                                </a></li>
+								                                  <li class="item"><a href="/rbdm/paly_3932.html" title="搞笑漫画日和4" target="_blank"><i class="num">7</i><span class="subject"><em class="ellipsis-one">搞笑漫画日和4</em> <i class="douban_score"></i></span><em class="hot">99°C</em>
+                                </a></li>
+								                                  <li class="item"><a href="/rbdm/paly_2367.html" title="悠悠式OVA" target="_blank"><i class="num">8</i><span class="subject"><em class="ellipsis-one">悠悠式OVA</em> <i class="douban_score"></i></span><em class="hot">99°C</em>
+                                </a></li>
+								                                  <li class="item"><a href="/rbdm/paly_2222.html" title="龙猫（国语）" target="_blank"><i class="num">9</i><span class="subject"><em class="ellipsis-one">龙猫（国语）</em> <i class="douban_score"></i></span><em class="hot">99°C</em>
+                                </a></li>
+								                                  <li class="item"><a href="/rbdm/paly_1408.html" title="十字架与吸血鬼" target="_blank"><i class="num">10</i><span class="subject"><em class="ellipsis-one">十字架与吸血鬼</em> <i class="douban_score"></i></span><em class="hot">99°C</em>
+                                </a></li>
+								                          </ul>
+                    </div>
+                </div>
+						            </div>-->
+		</div>
+    </section>
+</main>
+
+<#include "/common/footer.html">
+<script>
+
+    var runCallback1 = null;
+    new dmm({
+        cssStyle: 1, //控件样式                   默认1
+        container: "pageParent", //控件容器id
+
+        //回掉函数，一般就是post请求后台方法得到分页数据加载到页面上
+        callback: function(e) {
+            console.log(e);
+            var pageNum = e.index; //当前页
+            var name = getUrlParam('name');
+            e.pageSize1; //页面显示条数
+            //以上两个属性可以当作请求后台时传入的参数
+            $.ajax({
+                //url:'/search?name=a&pageNum='+ pageNum,
+                url:'${request.contextPath}/search',
+                data:'name='+name+'&pageNum='+ pageNum,
+                type:'get',
+                success:function (date) {
+
+                    console.log(date);
+                    $("#results").empty();
+                    $("#results").append(date);
+                    MAC.Lazyload();
+
+                }
+            });
+            //以下三行在加载完页面后必须填写
+            e.countpage = Math.ceil(Math.ceil(${total})/ e.pageSize1); //注意必写（数据总页数??通过后台方法获取）
+            e.infocount = ${total}; //注意必写（数据总条数??通过后台方法获取）
+            xian(e); //注意必写（加载控件）
+            //可将以下代码用于查询使用--联合dian()方法
+            runCallback1 = e; //将分页条件赋值变量
+        }
+
+    });
+
+    function getUrlParam(param) {
+        var reg = new RegExp("(^|&)" + param + "=([^&]*)(&|$)", "i");
+        var r = window.location.search.substr(1).match(reg);
+        if (r != null) return decodeURI(r[2]); return null;
+    };
+
+</script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,49 @@
+<div class="intro-con clearfix">
+
+    <div class="subject-row-m">
+
+        <h1 class="article-subject-m"><a href="/play?id=${movieVO.id}" target="_blank">${movieVO.name}</a></h1>
+
+        <h5 class="order-name-m"></h5>
+
+    </div>
+
+    <div class="thumb-wrap">
+
+        <img src="${movieVO.cover}" alt="${movieVO.name}" id="movie_thumb">
+
+
+
+        <label class="state">${movieVO.remarks}</label>
+
+    </div>
+
+    <div class="info-wrap low">
+
+        <div class="subject-row pc">
+
+            <h1 class="article-subject">${movieVO.name}</h1>
+
+            <h5 class="order-name"></h5>
+
+        </div>
+
+        <p class="director"><label>导演：</label><span>${movieVO.director}</span></p>
+
+        <p class="performer"><label>主演：</label><span>${movieVO.actor}</span></p>
+
+        <p class="tags"><label>分类：</label><span>${movieVO.category}</span></p>
+
+        <p class="country"><label>地区：</label><span>${movieVO.area}</span></p>
+
+        <p class="language"><label>语言：</label><span>${movieVO.language}</span></p>
+
+        <p class="year"><label>上映：</label><span>${movieVO.publishTime}</span></p>
+
+        <p class="episodes"><label>状态：</label><span>${movieVO.remarks}</span></p>
+
+    </div>
+
+    <span class="hot" style="font-size: 30px"><label>评分：</label><em id="visits_num">${movieVO.score?string("0.0")}</em></span>
+
+</div>

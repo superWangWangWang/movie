@@ -1,0 +1,28 @@
+Manifest-Version: 1.0
+Main-Class: cn.ddssbb.MovieApplication
+Class-Path: spring-boot-starter-validation-2.2.4.RELEASE.jar log4j-api-2
+ .12.1.jar spring-beans-5.2.3.RELEASE.jar hibernate-validator-6.0.18.Fin
+ al.jar spring-tx-5.2.3.RELEASE.jar tomcat-embed-core-9.0.30.jar jackson
+ -datatype-jdk8-2.10.2.jar pagehelper-5.1.11.jar jackson-datatype-jsr310
+ -2.10.2.jar jackson-databind-2.10.2.jar spring-webmvc-5.2.3.RELEASE.jar
+  snakeyaml-1.25.jar spring-boot-starter-freemarker-2.2.4.RELEASE.jar sp
+ ring-context-support-5.2.3.RELEASE.jar spring-boot-starter-jdbc-2.2.4.R
+ ELEASE.jar jakarta.annotation-api-1.3.5.jar tomcat-embed-el-9.0.30.jar 
+ spring-boot-starter-logging-2.2.4.RELEASE.jar jackson-annotations-2.10.
+ 2.jar spring-boot-2.2.4.RELEASE.jar spring-boot-autoconfigure-2.2.4.REL
+ EASE.jar spring-core-5.2.3.RELEASE.jar spring-context-5.2.3.RELEASE.jar
+  classmate-1.5.1.jar tomcat-embed-websocket-9.0.30.jar spring-boot-star
+ ter-tomcat-2.2.4.RELEASE.jar logback-core-1.2.3.jar spring-boot-devtool
+ s-2.2.4.RELEASE.jar jackson-core-2.10.2.jar mybatis-3.5.3.jar fastjson-
+ 1.2.67.jar spring-expression-5.2.3.RELEASE.jar jakarta.validation-api-2
+ .0.2.jar mybatis-spring-boot-starter-2.1.1.jar spring-boot-starter-json
+ -2.2.4.RELEASE.jar log4j-to-slf4j-2.12.1.jar HikariCP-3.4.2.jar spring-
+ aop-5.2.3.RELEASE.jar pagehelper-spring-boot-starter-1.2.13.jar mysql-c
+ onnector-java-8.0.19.jar spring-boot-starter-2.2.4.RELEASE.jar spring-b
+ oot-starter-web-2.2.4.RELEASE.jar jul-to-slf4j-1.7.30.jar spring-jdbc-5
+ .2.3.RELEASE.jar jsqlparser-2.0.jar jackson-module-parameter-names-2.10
+ .2.jar pagehelper-spring-boot-autoconfigure-1.2.13.jar freemarker-2.3.2
+ 9.jar mybatis-spring-boot-autoconfigure-2.1.1.jar jboss-logging-3.4.1.F
+ inal.jar logback-classic-1.2.3.jar slf4j-api-1.7.30.jar spring-web-5.2.
+ 3.RELEASE.jar mybatis-spring-2.0.3.jar spring-jcl-5.2.3.RELEASE.jar
+

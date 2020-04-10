@@ -1,0 +1,59 @@
+.page-num {
+    height: auto;
+}
+.load-more {
+    display: none;
+}
+.search-wrap .container{
+    border-top: 1px solid #666;
+}
+.main .new-hot-up{
+    /*padding-bottom: 50px;*/
+}
+.new-up .title .theme {
+    font-size: 14px;
+    font-weight: normal;
+    text-shadow: none;
+}
+.new-up .title .theme .fa {
+    font-size: 14px;
+    color: #333;
+	margin-right: 3px;
+}
+.hot-up .title .theme {
+    font-size: 18px;
+}
+.new-up .title .theme a{
+    margin-right: 10px;
+}
+.new-up .title .theme a:hover{
+	color: #FF9900 !important;	
+}
+.new-up .title .theme a:hover .fa{
+    color: #FF9900;
+}
+.new-up .title .theme a.active{
+    color: #FF9900 !important;
+	font-weight: bold;
+}
+.new-up .title .theme a.active .fa{
+    color: #FF9900;
+}
+.new-up .title .count{
+    font-size: 12px;
+}
+@media (max-width: 768px){
+    .hd-title .theme {
+        font-size: 18px;
+    }
+    .sub-nav .nav > li > a {
+        font-size: 12px;
+        margin: 0 5px;
+    }
+    .hd-nav .theme a {
+        font-size: 12px;
+    }
+    .new-up .title .theme a {
+        margin-right: 5px;
+    }
+}

@@ -1,0 +1,37 @@
+spring:
+  freemarker:
+    enabled: true
+    suffix: .html
+    request-context-attribute: request
+    cache: false
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/movie?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=Asia/Shanghai
+    type: com.zaxxer.hikari.HikariDataSource
+    username: fuckyoulaji
+    password: wuribo946
+  session:
+    store-type: none
+  devtools:
+    restart:
+      #热部署生效
+      enabled: true
+      #classpath目录下的WEB-INF文件夹内容修改不重启
+      #exclude: WEB-INF/**
+      #设置重启目录
+#  http:
+#    encoding:
+#      charset: UTF-8
+#      enabled: true
+
+#      additional-paths: src/main/java
+server:
+  port: 9999
+  #servlet:
+  #  context-path: /movie
+mybatis:
+  type-aliases-package: cn.ddssbb.movie.domain
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+    ##开启驼峰映射
+    map-underscore-to-camel-case: true

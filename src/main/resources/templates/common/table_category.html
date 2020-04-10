@@ -1,0 +1,10 @@
+<#list movieList as mv>
+<li class="item">
+        <span class="state"><em>${mv.remarks}</em></span>
+
+        <a href="/detail?id=${mv.id}" class="thumb" title="${mv.name}" target="_blank"><img class="lazyload" data-original="${mv.cover}"  src="${mv.cover}"   alt="${mv.name}"><span class="hot"><b>评分：</b><i>${mv.score}</i></span></a>
+
+        <h5 class="subject" title="${mv.name}"><a href="/detail?id=${mv.id}" target="_blank"><b>${mv.name}</b></a></h5>
+
+</li>
+</#list>

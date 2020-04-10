@@ -1,0 +1,46 @@
+<section class="ys-recommend clearfix" >
+
+    <div class="container">
+
+        <div class="new-up card-wrap">
+
+            <div class="title clearfix">
+
+                <h2 class="theme"><i class="fa fa-diamond"></i>推荐动漫</h2>
+
+                <div class="rolling-tips swiper-container">
+                    <ul class="swiper-wrapper">
+                        <li class="swiper-slide">
+                            <a href="javascript:;" class="today-up fr">现已收录动漫资源 ${count} 个</a>
+                        </li>
+                        <li class="swiper-slide">
+                            <a href="javascript:;" class="today-up fr">今日更新动漫资源 ${todayMovie?size} 个</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="content clearfix">
+                <ul class="new-up-list lazy-load-list ys-list">
+
+
+                    <#list recommend as mv>
+                    <#assign i=mv?counter>
+                    <#if i == 7>
+                    <li class="item hidex-3"><span class="state"><em>${mv.remarks}</em></span><a href="detail?id=${mv.id}" class="thumb" title="${mv.name}" target="_blank"><img class="lazyload" data-original="${mv.cover}"  src="${mv.cover}" alt="${mv.name}"><span class="hot"><b>评分：</b><i>${mv.score?string("0.0")}</i></span></a><h5 class="subject" title="${mv.name}"><a href="detail?id=${mv.id}" target="_blank"><b>${mv.name}</b></a>
+                    </li>
+                    <#elseif i == 8>
+                    <li class="item showx-2 hide-0"><span class="state"><em>${mv.remarks}</em></span><a href="detail?id=${mv.id}" class="thumb" title="${mv.name}" target="_blank"><img class="lazyload" data-original="${mv.cover}"  src="${mv.cover}" alt="${mv.name}"><span class="hot"><b>评分：</b><i>${mv.score?string("0.0")}</i></span></a><h5 class="subject" title="${mv.name}"><a href="detail?id=${mv.id}" target="_blank"><b>${mv.name}</b></a>
+                    </li>
+                    <#else>
+                    <li class="item"><span class="state"><em>${mv.remarks}</em></span><a href="detail?id=${mv.id}" class="thumb" title="${mv.name}" target="_blank"><img class="lazyload" data-original="${mv.cover}"  src="${mv.cover}" alt="${mv.name}"><span class="hot"><b>评分：</b><i>${mv.score?string("0.0")}</i></span></a><h5 class="subject" title="${mv.name}"><a href="detail?id=${mv.id}" target="_blank"><b>${mv.name}</b></a>
+                    </li>
+                </#if>
+            </#list>
+
+
+        </div>
+
+    </div>
+
+</section>
